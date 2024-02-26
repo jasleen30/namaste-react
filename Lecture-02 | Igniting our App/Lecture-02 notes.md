@@ -1,4 +1,4 @@
-## Lecture-2 : Here we will create our own react APP
+## Lecture-02 : Here we will create our own react APP
 
 - Make your app ready to deploy to production such as minify, bundling etc.
 - When you create the directly create-react-app it gives you basic `APP` which is already production ready does all the work such as bundling etc. Here we will do it by our own.
@@ -9,17 +9,17 @@
    * (package.json) is the configuration of npm
 
    ### STEP-2: npm install -D parcel .
-   
-    * There are two types of `dependencies` one is the dev dependency and one is the normal dependency, when we are developing we need dev dependency. Parcel will do chunking, bundle and we are doing this in development phase so we are using dev dependency.
-    * After doing this, node modules folder and package.lock.json is created and in the package.json you will see parcel as dev dependency.
-    * `carat(^, minor upgrade)` and `tilde(~, major upgrade)` in package.json .
-    * package.lock.json locks the version means it tracks the exact version of package installed. for example currently package.json has ^2.8.3 and in future 2.8.5 version is installed so in package.lock.json will show 2.8.5 and in package.json will remain ^2.8.3 .
-    * `(integrity)` : sha512- it stores the hash so that in production same version/hash of the package would be installed.
 
-    ### STEP-3: npx parcel index.html , this will create a local server. npx is execute a package.
+   * There are two types of `dependencies` one is the dev dependency and one is the normal dependency, when we are developing we need dev dependency. Parcel will do chunking, bundle and we are doing this in development phase so we are using dev dependency.
+   * After doing this, node modules folder and package.lock.json is created and in the package.json you will see parcel as dev dependency.
+   * `carat(^, minor upgrade)` and `tilde(~, major upgrade)` in package.json .
+   * package.lock.json locks the version means it tracks the exact version of package installed. for example currently package.json has ^2.8.3 and in future 2.8.5 version is installed so in package.lock.json will show 2.8.5 and in package.json will remain ^2.8.3 .
+   * `(integrity)` : sha512- it stores the hash so that in production same version/hash of the package would be installed.
 
-    ### STEP-4: npm install react
-    ### STEP-5: npm install react-dom
+   ### STEP-3: npx parcel index.html , this will create a local server. npx is execute a package.
+
+   ### STEP-4: npm install react
+   ### STEP-5: npm install react-dom
     
 * Transitive dependencies 
 * Create .gitignore file and put node_modules in that so that git will not track node_modules as we don't want to push this on production.
@@ -45,9 +45,10 @@
 * You can host your app on HTTPS
 * Tree Shaking - Remove unused Code
 * Different dev and prod bundles
-All these will help you in system design interview
 
-.parcel-cache and dist folder is created which caches the data
+  - All these will help you in system design interview
 
-Question: How to create your own create-react-app?
-Question: What is bundler (Parcel,webpack) Explain it's features.
+  - .parcel-cache and dist folder is created which caches the data
+
+## Question: How to create your own create-react-app?
+## Question: What is bundler (Parcel,webpack) Explain it's features.
